@@ -13,6 +13,25 @@
             max-width: 200px;
         }
     }
+    .consultation {
+        padding: 70px 0 85px 0;
+    }
+    .carousel {
+        min-height: 200px;
+        &__inner {
+            height: 100%;
+            width: 80%;
+            img {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+    }
 }
 @media (max-width: 767px) {
     .header {
@@ -44,6 +63,20 @@
         &__subtitle {
             min-height: 54px;
         }
+    }
+    .consultation {
+        &__descr {
+            margin-top: 55px;
+        }
+        .feed-form {
+            width: 288px;   
+        }
+    }
+    .carousel {
+        display: none;
+    }
+    .catalog {
+        padding: 50px 0;
     }
 }
 @media (max-width: 575px) {
@@ -134,6 +167,44 @@
         padding: 70px 0 85px 0;
         &__descr {
             text-align: center;
+        }
+    }
+    .catalog {
+        padding: 33px 0;
+        &__tabs {
+            flex-wrap: wrap;
+            margin-top: 25px;
+            li {
+                margin-bottom: 10px;
+                width: 190px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 40px;
+            }
+        }
+        &__content {
+            margin-top: 20px;
+        }
+    }
+    .feed {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            margin-top: 30px;
+        }
+        &__text {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__count {
+            text-align: center;
+        }
+        &__descr {
+            margin-top: 15px;
         }
     }
 }
