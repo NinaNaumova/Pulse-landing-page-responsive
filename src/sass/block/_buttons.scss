@@ -8,6 +8,8 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
     &_main {
         margin-top: 67px;
         width: 303px;
